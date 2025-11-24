@@ -3,6 +3,7 @@ import type { Plant } from './types'
 import PlantList from './PlantList'
 import PlantCard from './PlantCard'
 import PlantForm from './PlantForm'
+import Banner from './Banner' // make sure the path is correct
 
 interface AppProps {
   plants: Plant[]
@@ -16,7 +17,10 @@ const App: React.FC<AppProps> = ({ plants }) => {
 
   return (
     <div className="container mt-4">
-      <h1 className="mb-4">Mini Indoor Plant Nursery</h1>
+      {/* Banner */}
+      <Banner>
+        <h1>Welcome to the Mini Nursery</h1>
+      </Banner>
 
       {/* Search bar (UI only) */}
       <div className="mb-3">
@@ -55,8 +59,8 @@ const App: React.FC<AppProps> = ({ plants }) => {
           </div>
         </div>
       </div>
-    </div>
+    </div> // ✅ closes the outer container div
   )
 }
 
-export default App
+export default App // ✅ export the component

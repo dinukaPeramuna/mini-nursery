@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App'
+import App from './App' // ✅ default import
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 import './index.css'
-import type{ Plant } from './types'
+import type { Plant } from './types'
 
 const plants: Plant[] = [
   {
@@ -41,5 +41,5 @@ const plants: Plant[] = [
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <App plants={plants} />
-  </React.StrictMode>,
+  </React.StrictMode>
 )
