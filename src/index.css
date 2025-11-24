@@ -66,3 +66,49 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+/* ===== Custom Styles for Mini Nursery (Question 8) ===== */
+
+/* Override Vite defaults and set a clean page background */
+body {
+  background-color: #f4f6f9;   /* light grey */
+  display: block;              /* stops the Vite flex-centering */
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* Highlight active item in the Bootstrap plant list */
+.list-group-item.active {
+  background-color: #4caf50 !important; /* green */
+  border-color: #3e8d41 !important;
+  color: white !important;
+}
+
+/* Make <small> in card titles smaller */
+.card-title small {
+  font-size: 0.75rem;
+  color: #666; /* optional softer color */
+}
+
+/* ===== Custom Styles for Mini Indoor Nursery ===== */
+
+/* Override Vite defaults and set a light background */
+body {
+  background-color: #f4f6f9 !important;
+  display: block !important;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* Bootstrap active list item (selected plant) */
+.list-group-item.active {
+  background-color: #4caf50 !important;
+  border-color: #3e8d41 !important;
+  color: white !important;
+}
+
+/* Smaller <small> text inside card titles */
+.card-title small {
+  font-size: 0.75rem;
+  color: #666;
+}
